@@ -91,3 +91,49 @@ body {
 .post-title a:hover, .post-title a:focus {
   text-shadow: var(--text-shadow);
 }
+
+.settings {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.set-title {
+  font-size: 2rem;
+  color: var(--color-text);
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.list-link {
+  text-decoration: none;
+  color: rgb(14, 117, 60);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  transition: background-size .3s ease;
+}
+
+.list-link:hover, .list-link:focus {
+  background-size: 100% 2px;
+  text-shadow: var(--text-shadow);
+}
