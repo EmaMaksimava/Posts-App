@@ -9,7 +9,7 @@
 
 :root {
   --color-text: rgb(3, 54, 36);
-  --nav-bg: rgb(28, 128, 88);
+  --nav-bg: rgb(39, 151, 106);
 }
 
 body {
@@ -45,4 +45,24 @@ body {
 .nav__link:hover, .nav__link:focus {
   background-size: 100% 2px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
+}
+
+.dashboard {
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: var(--color-text);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.534);
+  text-transform: uppercase;
+}
+
+.text-content {
+  font-size: 1.5rem;
 }
