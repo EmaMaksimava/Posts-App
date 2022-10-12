@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
+}
+
+:root {
+  --color-text: rgb(3, 54, 36);
+  --nav-bg: rgb(39, 151, 106);
+  --text-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
+}
+
+body {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+
+}
+
+.nav {
+  padding: 10px 15px;
+  width: max-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+  background-color: var(--nav-bg);
+}
+
+.nav__link {
+  font-size: 2rem;
+  color: var(--color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  transition: background-size .3s ease;
+}
+
+.nav__link:hover, .nav__link:focus {
+  background-size: 100% 2px;
+  text-shadow: var(--text-shadow);
+}
+
+.dashboard {
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: var(--color-text);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.534);
+  text-transform: uppercase;
+}
+
+.text-content {
+  font-size: 1.5rem;
+}
+
+.posts {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.post-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.post-title a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: rgba(2, 88, 2, 0.945);
+}
+
+.post-title a:hover, .post-title a:focus {
+  text-shadow: var(--text-shadow);
+}
+
+.settings {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.set-title {
+  font-size: 2rem;
+  color: var(--color-text);
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.list-link {
+  text-decoration: none;
+  color: rgb(14, 117, 60);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  transition: background-size .3s ease;
+}
+
+.list-link:hover, .list-link:focus {
+  background-size: 100% 2px;
+  text-shadow: var(--text-shadow);
+}
